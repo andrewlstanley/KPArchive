@@ -1,0 +1,47 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+<link rel="import" href="dry-stone-layout.html">
+
+<dom-module id="my-view3">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      
+
+
+<dry-stone-layout target-height="[[size]]" spacing="[[spacing]]">
+  <img src="https://firebasestorage.googleapis.com/v0/b/kirkpatrick-archive.appspot.com/o/IMG_5976.jpg?alt=media&token=2a1b20fb-418a-45e0-9957-5ed1983605ac" width="75">
+          <img src="https://firebasestorage.googleapis.com/v0/b/kirkpatrick-archive.appspot.com/o/009.JPG?alt=media&token=6ff26e60-53a2-4580-b019-34b192f24ba0" width="160">
+          <img src="https://firebasestorage.googleapis.com/v0/b/kirkpatrick-archive.appspot.com/o/214.JPG?alt=media&token=01f9a368-acab-433e-b933-562bd6eff466" width="180">
+          <img src="https://firebasestorage.googleapis.com/v0/b/kirkpatrick-archive.appspot.com/o/IMG_3582.jpg?alt=media&token=59086f2f-5654-48ee-a560-8fc669f33082" width="100">
+</dry-stone-layout>
+    </div>
+  </template>
+
+  <script>
+    class MyView3 extends Polymer.Element {
+      static get is() { return 'my-view3'; }
+    }
+
+    window.customElements.define(MyView3.is, MyView3);
+  </script>
+</dom-module>
